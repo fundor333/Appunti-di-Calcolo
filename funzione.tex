@@ -1,0 +1,113 @@
+
+\section{Studio di funzione}	
+	 	
+	 	\subsection{Massimi e minimi di funzioni a una variabile}
+	 	
+	 	Un punto $x_0\in[a,b]\leq \text{Dominio \f}$ si dice:\\
+	 	
+		\paragraph{Massimo locale} esiste un intorno di \f(x) in cui si ha 
+		
+		\[
+		\f(x)\geq\text{\f}(x_0)
+		\]
+		
+		\paragraph{Minimo locale} esiste un intorno di \f(x) in cui si ha
+		
+		\[
+		\f(x)\leq \text{\f}(x_0)
+		\]
+		
+		Se è anche $\forall x \in \delta$ allora è anche 
+		\textbf{Assoluto}
+		
+		\subsubsection{Ricerca dei massimi e minimi locali}
+		
+		\paragraph{in $\f(x)$ derivabile}
+		
+		Si cercano le soluzioni dell'equazione ${\f}'(x)=0$ per ogni soluzione $x_0$ si studia il segno di ${\f}'(x)$ per un intorno di $x_0$\\
+		Se ${\f}'(x)>o$ a sinistra e ${\f}'(x)<0$ a destra è \textbf{massimo locale}\\
+		Se ${\f}'(x)<0$ a sinistra e ${\f}'(x)>o$ a destra è \textbf{minimo locale}\\
+		Se ${\f}'(x)$ è sempre o maggiore o minore di 0 allora può essere un \textit{flesso}
+		
+		\subsubsection{Formule di Taylor}
+		
+		Sia $\f(x)\in c^n(a,b)$ e $x_0 \in (a,b)$ chiamasi \textbf{polinomio di Taylor} $p_n(x)$ della funzione $\f(x)$ nel punto $x_0$ il polinomio
+		\[
+		\sum\limits_{i=0}^n {h \frac{\text{\f}^h(x_2)}{h!}(x-x_0)^h}
+		\]
+		dove si intende $\f^0(x)0\text{\f}(x)$ e 0!=1
+		
+		\subsection{Funzioni a più variabili}
+		
+\subsubsection{Piano tangente}
+Data una funzione $\text{\f}(x,y)$ ed un punto $P_0(x_0,y_0)$
+
+\[
+z=\f(x_0,y_0)+{\f}_x(x_0,y_0)*(x-x_0)+{\f}_y(x_0,y_0)*(y-y_0)
+\]
+
+\subsubsection{Gradiente}
+Il gradiente di una funzione a due variabili si scrive come:
+
+\[
+{\nabla\text{\f}(x,y)}=\left({
+\begin{array}{c}
+  {\text{\f}_x(x,y)} \\
+  {\text{\f}_y(x,y)}\\
+\end{array}
+}\right)
+\]
+
+Che non è altro che la direzione di massima crescita della derivata.
+Per il calcolo consiglio la forma
+
+\[
+\left|{{\nabla\text{\f}(x,y)}}\right|
+=\sqrt[2]{
+  {(\text{\f}_x(x,y))}^2
++
+  {(\text{\f}_y(x,y))}^2
+}
+\]
+
+In forma unitaria o versore si scrive 
+\[
+\left({
+\begin{array}{c}
+  {\frac{\text{\f}_x(x,y)}{\left|{\nabla\text{\f}(x,y)}\right|}}\\
+  {\frac{\text{\f}_y(x,y)}{\left|{\nabla\text{\f}(x,y)}\right|}}\\
+\end{array}
+}\right)
+\]
+
+\subsection{Massini e minimi a due variabili}
+
+\subsubsection{Massimi e minimi relativi}
+Per trovare i massimi e minimi relativi devo studiare il determinante della matrice Hessiana.
+
+\begin{center}
+\begin{tabular}{l|l|l}
+\toprule
+{$det[h(x_0,y_0)]$} & {$f_{xx}(x,y)$} & Quindi? \\
+\midrule
+$>0$ & $>0$ & min \\
+$>0$ & $<0$ & max \\
+$<0$ & $>=<0$ & sella \\
+$=0$ & $>=<0$ & indefinito\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection{Massimi e minimi assoluti}
+Data un dominio
+
+\begin{itemize}
+    \item{trovo i punti in cui le derivate vanno a 0 tenendo solo quelli interni al dominio}
+    \item{calcolo massimi e minimi relativi all'interno del dominio e il valore della funzione}
+\end{itemize}
+Con questi dati puoi studiare la funzione per ricavare i massimi e minimi assoluti ovvero:	
+
+\begin{itemize}
+    \item{studia la funzione sui punti delimitati dal dominio}
+    \item{studiare la funzione nei vertici del dominio}
+\end{itemize}

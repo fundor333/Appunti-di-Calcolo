@@ -1,0 +1,196 @@
+\section{Limiti}
+ 
+ \subsection{Nozioni legate ai limiti}
+  
+  \paragraph{Estremo superiore e inferiore}
+  	In un insieme completo l'estremo superiore si definisce:
+  	 \begin{quote}
+  	  Dato un insieme $A \subset \mathbb{R}$ chiamasi maggiorante ogni numero $k\geq a$ $\forall a \in A$.
+  	 \end{quote}
+	In tal caso si dice limitato superiormente e viene chiamato \textit{estremo~superiore} il più piccolo dei suoi maggioranti. Se tale numero $\delta \in A$ si dice \textit{massimo di A}, altrimenti si definisce soltanto come estremo superiore di A.\\ Nel caso che A non ammetta maggioranti allora è \textit{illimitato superiormente} e il suo estremo è $+\infty$. Analogamente si definisce \textit{estremo inferiore}.
+	
+	\paragraph{Palla aperta di centro P0 e raggio $\delta$}
+	LA si indica con $\mathbb{B}(P0,\delta)$ ed è data dai punti
+	$P\in \mathbb{R}|d(P,P0)<\delta$.\\ A questo punto risulta evidente che i concetti e le definizioni date in $\mathbb{R}^{2}$ e $\mathbb{R}^{3}$ possono estendersi a uno spazio cartesiano $\mathbb{R}^{n}$ qualsiasi.
+	
+	\paragraph{Spazi metrici}
+	 \begin{quote}
+	  Un insieme $\mathbb{X}$ è detto spazio metrico e i suoi elementi vengono chiamati punti se esiste una funzione 
+	  \textit{$d:\mathbb{X}x\mathbb{X}\to \mathbb{R}^{+}$} che chiameremo \textit{distanza} tale che:
+	  \begin{gather}
+	   d(x,y)\geq 0 \quad \forall x,y \in \mathbb{X}\\
+	   d(x,y)=0 \quad \Leftrightarrow x=y\\
+	   d(x,y)\leq d(x,y)+d(y,z) \quad \forall x,y,z\in \mathbb{X}
+	  \end{gather}
+	 \end{quote}
+	
+	\subsubsection{Definizioni legate agli spazi metrici}
+     
+     \paragraph{Intorno sferico}
+      Chiamasi \textit{intorno sferico} o \textit{palla aperta} di centro x0$\in \mathbb{X}$ e raggio $\delta >0$, l'insieme dei punti $x\in \mathbb{X}$ tali che: $d(x_0,x)<\delta$\\
+      
+      \paragraph{Intorno}
+      Chiamasi \textit{intorno} di $x_0$ qualsiasi sottoinsieme $\mathbb{H} \subseteq \mathbb{X}$ contenente un intorno sferico di $x_0$
+      
+      \paragraph{Aperto}
+      Un sottoinsieme $\mathbb{A}\subseteq \mathbb{X}$ si dice \textit{aperto} se ogni suo punto è centro di un intorno sferico tutto contenuto in $\mathbb{A}$
+      
+      \paragraph{Chiuso}
+      Un sottoinsieme $\mathbb{B}\subset \mathbb{X}$ si dice \textit{chiuso} se il suo complemento in x x/$\mathbb{B}$ è aperto.
+      \textbf{N.B.}: l'intero spazio $\mathbb{X}$ e l'insieme vuoto $\phi$ sono gli unici due insiemi sia aperti che chiusi.
+     
+     \paragraph{Punto di frontiera}
+      Un punto $x_0$ si dice di \textit{frontiera} per $\mathbb{A} \subseteq \mathbb{X}$ se in ogni suo interno sferico cadono sia punti si $\mathbb{A}$ che punti di $\mathbb{X}/\mathbb{A}$. Il punto $x_0$ può appartenere ad $\mathbb{A}$ oppure ad $\mathbb{X}/\mathbb{A}$.
+     
+     \paragraph{Punto di accumulazione}
+      Un punto $x-0$ si dice di \textit{accumulazione} per $\mathbb{A}$ se in ogni suo intorno cadono punti di $\mathbb{A}$ diversi da $x-0$. Anche in questo caso $x-0$ può appartenere sia ad $\mathbb{A}$ che ad $\mathbb{X}/\mathbb{A}$.
+      
+     \paragraph{Punto isolato}
+     Un punto $x_0$ si dice \textit{isolato} se esiste una palla aperta con centro in $x_0$ che non contiene altri punti di $\mathbb{A}$
+     
+     \subsubsection{Funzioni}
+     
+     \paragraph{Crescenti}
+      \f{} si dice \textit{crescente} se:
+      \[ 
+      x'' > x' \to \f(x'')>\f(x')
+      \]
+      
+      \paragraph{Decrescenti}
+      \f{} si dice \textit{decrescente} se:
+      \[
+      x'' > x' \to \f(x'')<\f(x')
+      \]
+      
+      \paragraph{Monotone}
+      È evidente che le funzioni strettamente monotone sono iniettive e quindi invertibili.
+      
+      \paragraph{Periodiche}
+      Una funzione \f{} di $\mathbb{R}$ in $\mathbb{R}$ si dice \textit{periodica} se esiste almeno un numero reale $\alpha >0$ tale che:
+      \[
+      \f(x \pm n \alpha)=\f(x) \quad \forall x \in \mathbb{R} \wedge \forall n \in \mathbb{N}
+      \]
+      
+      \paragraph{Continue}
+      Una funzione si dice continua nel punto $x0\in$ Dominio \f() se:
+      \[
+      	\mathop{\lim}\limits_{x \to x_0}\text(\f)(x)=\text{\f}(x)
+      \]
+      
+      Si dice continua su tutto il dominio se vale $\forall x_0\in\text{Dominio}\f()$. 
+      L'insieme delle funzioni continue nell'insieme D si indica con il simbolo $C^0(D)$
+      
+      \subsection{Limite a variabile singola}
+      
+       \paragraph{Definizione:}
+        Sia \f$(x)$ una funzione definita attorno al punto x0 (non necessariamente anche nel punto) si dirà che:
+        \[
+        \mathop{\lim}\limits_{x \to x_0} \f (x)= L
+        \]
+        Se $ \forall \varepsilon >0$ piccolo a piacere esiste in corrispondenza un intorno H di $x_0$ per~cui:\\
+        \[
+        \left|{\text{\f}(x)-L}\right|<\varepsilon \text{ per } x\in H/x_0
+        \]
+        si chiama 
+        
+        \begin{gather*}
+        \mathop{\lim}\limits_{x \to x_0^+} \text{\f} (x)=L\\
+        \text{\textit{limite destro}}\\
+        \mathop{\lim}\limits_{x \to x_0} \f (x)= L
+        \end{gather*}
+        
+        Se $ \forall \varepsilon >0$ piccolo a piacere esiste in corrispondenza un intorno H di x0 per~cui:
+        \begin{gather*}
+        \left|{\text{\f}(x)-L}\right|<\varepsilon \text{ per } x\in H/x_0\\
+        \text{si chiama}\\
+        \mathop{\lim}\limits_{x \to x0^-} \text{\f} (x)=L 
+        \text{\textit{limite sinistro}}
+        \end{gather*}
+		
+		\subsubsection{Teoremi dei limiti}
+		 \begin{thm}[Teorema dell'unicità del limite:]
+		 \textbf{}\\
+		  Se esiste $\mathop{\lim}\limits_{x \to x_0}\f(x)\to x_0$ questo è unico. Ne seque che la condizione necessaria e sufficente affinche esista $\mathop{\lim}\limits_{x \to x_0}\f(x)$ è che in $x_0$ esistano il limite destro e sinistro e che siano uguali tra loro.\\
+		 \end{thm}
+		 
+		Dati i limiti\\ 
+		\[
+		 \mathop{\lim}\limits_{x \to x_0}\f (x)=L1\quad
+		 \mathop{\lim}\limits_{x \to x_0}\g (x)=L2
+		\]
+		  sono dimostrabili i seguenti teoremi:
+		  
+		 \begin{thm}[Limite della somma e della differenza:]
+			\[
+		  \mathop{\lim}\limits_{x \to x_0}[\f(x)\pm \g (x)]=L1\pm L2
+		  \] 
+		 \end{thm}
+		 
+		  \begin{thm}[Limite del prodotto:]
+		  \[
+		  \mathop{\lim}\limits_{x \to x_0}[\f(x)\g(x)=L1*L2
+		  \]
+		  \end{thm}
+		  
+		  \begin{prin}[Di sostituzione:]
+		  Se \f(x) e g(x) sono \textit{infinitesimi di ordine superiore} o \text{infiniti di ordine inferiore} di ${\f}_1(x)$ e ${\g}_1(x)$ allora si ha:
+		  \[
+		  \mathop{\lim}\limits_{x \to x_0}\frac{\text{\f(x)}\pm \text{\f}_1(x)}{\text{g(x)}\pm \text{g}_1(x}
+		  \]
+		  \end{prin}
+
+		  
+		  \begin{thm}[Limite del quoziente:]
+		  \[
+		  \mathop{\lim}\limits_{x \to x_0}\frac{ \text{\f}(x)} {\text
+		  {g}(x)}=\frac{L1}{L2}
+		  \]
+		  \end{thm}
+		  
+		  \begin{thm}[Limite del rapporto di due polinomi:]
+		  \begin{gather*}
+		  \mathop{\lim}\limits_{x \to \infty}\frac{a_nx^n+a_{n-1}x^{n-1}+…+a_1x+a_0}{b_mx^m+b_{m-1}x^{m-1}+…+b_1x+b_0}\text{ con }a_n\ne 0 \and b_m\ne 0\text{ è:}\\ 
+		  \infty\text{ se }n>m\\
+		  \frac{a^n}{b^m}\text{ sse }n=m\\
+		  0\text{ se }n<m\\
+		 \end{gather*}
+		 \end{thm}
+
+\begin{thm}[Limite di una funzione composta da due funzioni continue:]
+		  \[
+		  \mathop{\lim}\limits_{x \to x_0}\text{\f}\left[{g(x)}\right]=\text{\f}(l)
+		  \]
+		  \end{thm}
+		  
+		 I teoremi qui enunciati valgono sempre a meno che non si presenti uno dei seguenti casi indeterminati:
+		 
+		\begin{gather*}
+		  \pm\infty\mp\infty\qquad \infty *0\qquad
+		  \frac{0}{0}\qquad
+		  1^{\infty} \qquad
+		  \frac{\infty}{\infty}
+		 \end{gather*}
+		  
+		  \subsubsection{Infinitesimi e infiniti}
+		   La funzione $\mathop{\lim}\limits_{x \to x_0} \text{\f}(x)=0$ si dice \textit{infinitesima} in $x_0$ o in $\infty$.\\
+		   La funzione $\mathop{\lim}\limits_{x \to x_0} \text{\f}(x)=\infty$ si dice \textit{infinita} in $x_0$ o in $\infty$.\\
+		   
+		   Date due funzioni \f(x) e g(x) infinitesime si dice che \f(x) è \textit{infinitesima di ordine superiore} rispetto a g(x) se
+		   \[
+		   \mathop{\lim}\limits_{x \to x_0}\frac{\text{\f(x)}}{g(x)}=0
+		   \]
+		   Date due funzioni \f(x) e g(x) infinite si dice che \f(x) è \textit{infinita di ordine superiore} rispetto a g(x) se
+		   \[
+		   \mathop{\lim}\limits_{x \to x_0}\frac{\text{\f(x)}}{g(x)}=\infty
+		   \]
+		   
+		   \subsubsection{Limiti notevoli o particolarmente importanti}
+Mi permetto di aggiungere dei limiti oltre ai limiti notevoli o variazioni di essi per semplificare il lavoro con i limiti in quanto i seguenti sei limiti sono i limiti indefiniti più comuni.
+		   \begin{gather}
+		   \mathop{\lim}\limits_{x \to 0} \frac{\mathbb{e}^x-1}{x}=1\\
+			\mathop{\lim}\limits_{x \to \infty} \left({1+\frac{1}{x}}\right)^x=e\mathbb{e}\\
+		   \mathop{\lim}\limits_{\text{\f}(x) \to 0}\frac{\sin\text{\f}(x)}{\text{\f}(x)}=1\\
+			\mathop{\lim}\limits_{x \to 0}\frac{1-\cos(x)}{x}=0\\
+			\mathop{\lim}\limits_{x \to 0}\frac{1-\cos(x)}{x^2}=\frac{1}{2}\\
+			\mathop{\lim}\limits_{x \to 0}\frac{\log(1+x)}{x}=1
+			\end{gather}

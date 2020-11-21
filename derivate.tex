@@ -1,0 +1,175 @@
+\section{Derivate}
+
+\subsection{Derivata a una variabile}
+	La \textit{derivata} non è altro che un limite. Infatti la derivata è il limite del rapporto incrementale della funzione \f.
+\[{\rm d}\text{\f}(x)=\mathop{\lim}\limits_{h \to 0} \frac{\text{\f}(x_0+h)-\text{\f}(x_0)}{h}
+\]	
+	\subsubsection{Tabella delle derivate fondamentali e non}
+	\begin{gather*}
+		 {\rm d}(k)=0\\
+		 {\rm d}(x)=1\\
+		 {\rm d}(x^n)=nx^{n-1}\\
+		 {\rm d}(\left|{x}\right| )=\frac{\left|{x}\right|}{x} \text{ oppure }\frac{x}{\left|{x}\right|}\\
+		 {\rm d}(A^x)=A^x\log{A}\\
+		 {\rm d}\sqrt[2]{x}=\frac{1}{2\sqrt[2]{x}}\\
+		 {\rm d}(\log_a{x})=\frac{1}{x}\log_a{e}\\
+		 {\rm d}(e^x)=e^x\\
+		 {\rm d}(\sin{x})=\cos{x}\\
+		 {\rm d}(\cos{x})=- \sin{x}\\
+		 {\rm d}(\tan{x})=\frac{1}{\cos^2{x}} \text{ o } i+\tan'2x\\
+		 {\rm d}(\arctan{x})=\frac{1}{1+x^2}\\
+		 {\rm d}\frac{1}{x}=-\frac{1}{x^2}\\
+		 {\rm d}(k\text{\f}(x))=k\text{\f}'(x)\\
+		 {\rm d}(\arcsin x)=\frac{1}{\sqrt[2]{1-x^2}}\\
+		 {\rm d}(\arccos x)=-\frac{1}{\sqrt[2]{1-x^2}}\\	\end{gather*}
+	
+		\subsubsection{Teoremi delle derivate}
+		
+		 \begin{thm}[]
+		  \[
+		  {\rm d}\left({\text{\f}(x)\pm g(x)}\right)=\text{\f}'(x)\pm g'(x)
+		  \]
+		  \end{thm}
+		  
+		  \begin{thm}[]
+		  \[
+		  {\rm d}\left({\text{\f}(x) g(x)}\right)=\text{\f}'(x) g(x)+\text{\f}(x)g'(x))
+		  \]
+		  \end{thm}
+		  
+		  \begin{thm}[]
+		  \[
+		  {\rm d}(\frac{\text{\f}(x)}{g(x)})=\frac{\text{\f}'(x)g(x)-\text{\f}(x)g'(x)}{g^2(x)}
+		  \]
+		  \end{thm}
+		  
+		  \begin{thm}[]
+		  \[
+		  {\rm d}\text{ \f}(g(x))=\text{\f}'(g(x))g'(x)
+		  \]
+		  \end{thm}
+		  
+		  \begin{thm}[]
+		  \[
+		  {\rm d}(\text{\f}'(x))=\frac{1}{\text{\f}'(\text{\f}^-1()x)}
+		  \]
+		  \end{thm}
+		  
+		  \begin{thm}[]
+		  \[
+		  {\rm d}(\text{\f}(x)^{g(x)})=\text{\f}(x)^{g(x)}\left({g'(x)\ln\left({\text{\f}(x)}\right)+\frac{g(x)\text{\f}'(x)}{\text{\f}(x)}}\right)
+		  \]
+		  \end{thm}
+		 	
+		 	\begin{thm}[Rolle]
+		  Sia $\f(x)\in c'[a,b]\text{ con \f}(a)=\text{\f}(b)$ e derivabile in $]a,b[$.\\ Allora esiste almeno un punto interno ad [a,b] in cui $\f '(c)=0$
+		  
+		  \end{thm}
+		 	
+		 	\begin{thm}[Lagrange]
+		   Sia $\f(x)\in c'[a,b]$ e derivabile in $]a,b[$.\\ Allora esiste almeno un punto c interno ad $[a,b]$ in cui:
+		   $\f'(c)=\frac{\text{\f}(b)-\text{\f}(a)}{b-a}$
+		  \end{thm}
+		  
+		  	\begin{cor}[Lagrange 1]
+		   Sia $\f(x)\in c'[a,b]$ e derivabile in $]a,b[$.\\ Allora esiste almeno un punto c interno ad $[a,b]$ in cui:
+		   $\f'(x)=0$
+		  \end{cor}
+
+		  \begin{cor}[Lagrange 2]
+		  Sia $\f(x)$ e g(x) continue in $[a,b]$ e $\f'(x)=\g'(x)$ in $]a,b[$.\\ Allora $\f(x)-g(x)=k \text{ in }[a,b]$
+		  \end{cor}
+		  
+		  \begin{cor}[Lagrange 3]
+		   Sia $\f(x)\in c'[a,b]$ e derivabile in $]a,b[$.\\ Allora se $\f'(x)>0$ la funzione è crescente.\\ Se $\f'(x)<0$ la funzione è decrescente.
+		  \end{cor}
+		  
+\subsubsection{Differenziale}
+
+Per h=1 si ottiene:
+\[
+\text{\f}(x_0)+\text{\f}'(x_0)(x-x_0)=\text{\f}(x_0)+f'(x_0)\delta x
+\]
+per cui in una prima approssimazione si ha, in un intorno di $x_0$:
+\[
+\f(x)\cong \text{\f}(x_0)+\text{\f}'(x_0)\delta x
+\]
+
+da cui segue:
+\[
+\delta \text{\f}(x)=\text{\f}(x)+\text{\f}'(x_0)\cong \text{\f}'(x_0)\delta x
+\]
+La quantità $\f'(x_0)\delta x$ si chiama \textit{differenziale} di $\f(x)$ nel punto x. E si scrive:
+\[
+d\text{\f}(x_0)=\text{\f}'(x_0)\delta x
+\]
+
+\subsection{Derivate a più variabili}
+È possibile fare una derivata a più variabili. Essa si scrive
+\[
+\text{\f}_y(x,y)=\mathop{\lim}\limits_{h \to 0} \frac{\text{\f}(x,y+h)-\text{\f}(x,y)}{h}
+\]
+e si indica
+\[
+\frac{{\rm d}\text{\f}}{{\rm d}x}\text{ e }\frac{{\rm d}\text{\f}}{{\rm d}y}
+\]
+Da questo si ricava che
+
+\begin{gather*}
+\frac{{\rm d}\f}{{\rm d}i}(x,y)=
+{\f}_x(x,y)\text{ che ha u}=\left({
+\begin{array}{c}
+  {1}  \\
+  {0}  \\
+\end{array}
+}\right)\\
+\frac{{\rm d}\text{\f}}{{\rm d}i}(x,y)=\text{\f}_x(x,y)\text{ che ha u}
+=\left({
+\begin{array}{c}
+  {0}  \\
+  {1}  \\
+\end{array}
+}\right)
+\end{gather*}
+
+
+\subsubsection{Derivata secondo vettore}
+
+La derivata secondo il vettore
+\[
+\overset{\scriptscriptstyle-}{u}=\left({
+\begin{array}{c}
+  {u_1}\\
+  {u_2}\\
+\end{array}
+}\right)
+\text{ è uguale a }
+\frac{{\rm d}\text{\f}}{{\rm d}u}(x,y)=\text{\f}_x(x,y)*u_1+\text{\f}_y(x,y)*u_2
+\]
+\subsubsection{Derivata di funzione composta}
+\[
+\text{\f}(x,y):\mathbb{R}^2\to\mathbb{R} 
+\text{ e sia }
+ g(t)= \bigg \{
+\begin{array}{rl}
+x(t)\\
+y(t)\\
+\end{array}*\mathbb{R}^2\to\mathbb{R}
+\]
+Allora
+
+\begin{gather*}
+\f(x,y)=\f[x(t),y(t)]\\
+{\f}'(x,y)=\f[x(t),y(t)]*x'(t)+{\f}_y[x(t),y(t)]*y'(t)
+\end{gather*}
+
+\subsubsection{Derivata di ordine superiore}
+
+\begin{gather}
+{\f}_{xx}(x,y)=\frac{{\rm d}\frac{{\rm d}f}{{\rm d}x}}{{\rm d}x}\to\text{Derivo \f}_x(x,y)\text{ tenendo la y come costante}\\
+{\f}_{yy}(x,y)=\frac{{\rm d}\frac{{\rm d}f}{{\rm d}y}}{{\rm d}y}\to\text{Derivo \f}_y(x,y)\text{ tenendo la x come costante}\\
+{\f}_{xy}(x,y)=\frac{{\rm d}\frac{{\rm d}f}{{\rm d}x}}{{\rm d}y}\to\text{Derivo \f}_x(x,y)\text{ tenendo la x come costante}\\
+{\f}_{yx}(x,y)=\frac{{\rm d}\frac{{\rm d}f}{{\rm d}x}}{{\rm d}y}\to\text{Derivo \f}_y(x,y)\text{ tenendo la y come costante}\\
+\end{gather}
+
+Per il teorema di Schwarz se esiste ${\f}_{x,y}$ allora è uguale a $\f{x,y}$

@@ -1,0 +1,195 @@
+ \section{Integrale}
+
+\subsection{Definito}
+
+Sia $\f(x)\in C^0[a,b]$. Si consideri una partizione $P_n$ dell'intervallo [a,b] in n parti, mediante i punti $x_0=a,x_1,x_2,...,x_{n-1},x_n=b$.\\ 
+Sia $\delta_i$ un punto arbitrario dell' iesimo intervallo $[x_{i-1},x_i]$ e $\delta$ l'ampiezza massima dell'intervalli della partizione. Si riesce a dimostrare che esiste ed è finito il limite:
+
+\[
+\int\limits_a^b{\text{\f}(x){\rm d}x}=\mathop{\lim}\limits_{x \to \infty \text{ e }
+\delta \to0}
+\sum\limits_{i=1}^n {\text{\f}(\delta_i)(x_i-x_{i-1})}
+\]
+
+E si definisce \textit{integrale definito} della funzione $\f(x)$ tra a e b, che sono detti estremi di integrazione. In oltre si pone per definizione:
+
+\[
+\int\limits_a^b{\text{\f}(x){\rm d}x}=-\int\limits_a^b{\text{\f}(x){\rm d}x}\Rightarrow\int\limits_a^b{\text{\f}(x){\rm d}x}=0
+\]
+
+\subsubsection{Proprietà  degli integrali}
+
+\begin{form}[Somma algebrica]
+		  \[
+		  \int\limits_a^b({\text{\f}(x)\pm g(x)){\rm d}x}=\int\limits_a^b{\text{\f}(x)}{\rm d}x\pm
+\int\limits_a^b{\text{\f}(x)}{\rm d}x
+		  \]
+		  \end{form}
+		  
+		  \begin{form}[Costante]
+		  \[
+		  \int\limits_a^b(\alpha{\text{\f}(x)){\rm d}x}=\alpha\int\limits_a^b({\text{\f}(x)){\rm d}x}
+		  \]
+		  \end{form}
+
+\begin{form}[Intervalli in sequenza]
+		  \[
+		  \int\limits_a^b{\text{\f}(x){\rm d}x}+\int\limits_b^c{\text{\f}(x){\rm d}x}=\int\limits_a^c{\text{\f}(x)}{\rm d}x
+		  \]
+		  \end{form}
+		  
+		  \begin{thm}[Calcolo di un integrale]
+		  \[
+		  \int\limits_a^b{\text{\f}(x){\rm d}x}=G(b)-G(a)\text{ in cui G è una qualunque primitiva di }\f(x)
+		  \]
+		  \end{thm}
+
+\subsection{Indefiniti }
+La totalità  delle primitive di ${\f}(x)$ si indica come:
+\[
+\int\limits{\text{\f}(x){\rm d}x}=G(x)+k
+\]
+ed è chiamato \textit{integrale indefinito} in cui k ha un valore arbitrario.
+\subsubsection{Integrali immediati o notevoli}
+Esistono, oltre alle formule di derivazione, una serie di integrali definiti sotto forma di tabella:
+\begin{gather}
+\begin{align}
+		 \int\limits{}{\rm d}x=x+c \\
+		 \int\limits{x^2}{\rm d}x=\frac{1}{a+1}x^{a+1}+c(a≠-1)\\
+		 \int\limits{\frac{1}{x}}{\rm d}x=log(x)+c\\
+		 \int\limits{\sin(x)}{\rm d}x=-\cos(x)+c \\
+		 \int\limits{\cos(x)}{\rm d}x=\sin(x)+c\\
+		 \int\limits{\frac{1}{\cos^2(x)}}{\rm d}x=\tan(x)+c\\
+		 \int\limits{\frac{1}{\sin^2(x)}}{\rm d}x=\cot(x)+c\\
+		 \int\limits{e^x}{\rm d}x=e^x+c\\
+		 \int\limits{a^x}{\rm d}x=\frac{a^x}{\log(a)}+c \\
+		 \int\limits{\frac{1}{\sqrt[]{1-x^2}}}{\rm d}x=\arcsin(x)+c \\		 \int\limits{-\frac{1}{\sqrt[]{1-x^2}}}{\rm d}x=\arccos(x)+c \\
+		 \int\limits{\frac{1}{{1-x^2}}}{\rm d}x=\arctan(x)+c
+\end{align}
+\end{gather}
+
+	\subsubsection{Integrazione per sostituzione}
+	Dato l'integrale: $\int\limits{\text{\f}\left({g(x)}\right)}g'(x){\rm d}x$ si pone $t=g(x)\Rightarrow {\rm d}t=g'(x){\rm d}x$ ottenendo cosi l'integrale $\int\limits{\text{\f}(t)}{\rm d}t$.\\
+	Se lo si risolve si ha: $\int\limits{\text{\f}(t)}{\rm d}t=\text{\f}(t)+c \text{ con \f}'(t)=\text{\f}(t)$ 
+	
+	\subsection{Applicazione degli integrali}
+	
+	\subsubsection{Area sottesa alla curva}
+	Data una curva di equazione $y=\text{\f}(x)$ con $x\in [a,b]$, se la curva sta tutta sopra l'asse x l'integrale:
+	
+	\[
+	\int\limits_a^b{\text{\f}(x){\rm d}x}
+	\]
+	
+	rappresenta l'area compresa fra la curva e l'intervallo $[a,b]$.
+	Se la curva sta tutta sotto l'asse x 
+	$(\text{\f}(x)\leq0)$
+	 allora l'area compresa fra la curva e l'asse x è data da 
+	 $\int\limits_a^b{\text{\f}(x){\rm d}x}$.\\
+	 Se invece la curva attraversa l'asse x allora l'integrale precedente rappresenta la differenza tra la parte di area sopra e sotto dell'asse delle x. Per calcolare quest'area si deve dividere l'intervallo in due parti,: [a,c] e [c,b], in cui nel primo è sopra l'asse x e dopo sotto o viceversa. La formula per trovare l'area allora diventa:
+	 \[
+	\text{Area}=- \int\limits_a^c{\text{\f}(x){\rm d}x}+\int\limits_c^b{\text{\f}(x){\rm d}x}
+	\]
+	
+Se invece devo calcolare l'area compresa tra due curve $y={\f}(x)$ e $y={\g}(x)$ in cui, nell'intervallo preso, sono una sopra l'altra $({\f}(x)>g(x)$) uso la formula:
+
+\[
+\int\limits_a^b{[\text{\f}(x)-g(x)]{\rm d}x}
+\]
+
+nel malaugurato caso in cui si "intrecciano" (prima sono $\f(x)>\g(x)$ e poi sono $\f(x)<g(x)$ e poi di nuovo $\f(x)>g(x)$) allora serve fare:
+
+\[
+\int\limits_a^c{[\text{\f}(x)-g(x)]{\rm d}x}
+\int\limits_d^b{[\text{\f}(x)-\text{\f}'(x)]{\rm d}x}+
+\int\limits_c^d{[g(x)-\text{\f}(x)]{\rm d}x}
+\]
+
+\subsubsection{Calcolo della lunghezza di una curva}
+Data la funzione $y=\f(x)$ con $x\in[a,b]$ la lunghezza di questa  curva si può calcolare con l'integrale:
+
+\[
+L=\int\limits_a^b{\sqrt[]{1+\text{\f}'(x)^2}}{\rm d}x
+\]
+
+\subsubsection{Calcolo volume di solido di rotazione}
+Data la curva di equazione $y=\text{\f}(x)$ con $x\in [a,b]$ il volume del solido generato da una sua rotazione di un angolo 2$\pi$ attorno al'asse x è dato dall'integrale:
+
+\[
+V=\int\limits_a^b{[\text{\f(x)}]^2}{\rm d}x
+\]
+
+\subsection{Criteri di convergenza per integrali}
+Alle volte, anche se non si sa calcolare un integrale generalizzato è utile sapere se esso converge o diverge. A questo scopo sono utili seguenti criteri di convergenza:\\
+
+\subsubsection{Criterio del confronto}
+Siano \f(x) e g(x) continue nell'intervallo [a,b] escluso un punto c di tale intervallo in cui tendono entrambe ad infinito (c può coincidere con uno degli estremi dell'intervallo). Si ha allora che:\\
+se $\int\limits_a^b{g(x)}{\rm d}x$ converge, converge anche $\int\limits_a^b{\text{\f(x)}}{\rm d}x$\\
+se $\int\limits_a^b{g(x)}{\rm d}x$ diverge, diverge anche $\int\limits_a^b{\text{\f(x)}}{\rm d}x$\\
+
+\subsubsection{Criterio di asintoticità}
+Siano \f(x) e g(x) continue in $[a,b]$ escluso un punto c di tale intervallo (che può coincidere con uno dei due estremi) in cui le funzioni tendano entrambe ad infinito allora se \f(x) e g(x) sono dello stesso ordine per x$\to$c allora
+\[
+\int\limits_a^b{\text{\f}(x)}{\rm d}x \text{ e } \int\limits_a^b{g(x)}{\rm d}x
+\]
+sono entrambe divergenti o entrambe convergenti.
+
+Siano \f(x) e \g(x) continue in $[a,+\infty]$ e siano dello stesso ordine per $x\to\infty$ allora
+
+\[
+\int\limits_a^{+\infty}{\text{\f}(x)}{\rm d}x \text{ e } \int\limits_a^{+\infty}{g(x)}{\rm d}x
+\]
+
+\subsection{Integrali doppi}
+
+\subsubsection{formule di riduzione}
+Se, per esempio, ho una una funzione con dominio normale rispetto a
+
+\[
+x:D=\left\{{(x,y),\text{ }\alpha(x)\leq y\leq \beta(x),\text{ }a\leq x \leq b}\right\}
+\]
+e dovessi risolvere l'integrale
+\[
+\int\limits{\int\limits_D{\text{\f}(x,y){\rm d}x{\rm d}y}}=\int\limits_a^b{[\int\limits_{\alpha(x)}^{\beta(x)}{\text{\f}(x,y){\rm d}y}]}{\rm d}x
+\]
+
+\begin{itemize}
+    \item{Calcolo la primitiva della funzione $\int\limits_a^b{\f(x,y){\rm d}x}$ considerando x come costante}
+    \item{Calcolo \f$_y(x,y)$, cioè la primitiva rispetto a y del punto precedente}
+    \item{Calcolo l'integrale
+    \[
+     \int\limits_{\alpha(x)}^{\beta(x)}{\text{\f}(x,y){\rm d}x}=[\text{\f(x,y)}]_{\alpha(x)}^{\beta(x)}=\text{\f}[x,\beta(x)]-\text{\f}[x,\alpha(x)]
+     \]
+     }
+    \item{Calcolo l'integrale doppio rispetto alla sola x ovvero risolvo
+    
+    \[
+    \int\limits\int\limits_D{\text{\f}(x,y){\rm d}x}=\int\limits_a^b\left\{{{\text{\f}[x,\beta(x)]-\text{\f}[x,\alpha(x)]}}\right\}{\rm d}x
+    \]
+    }
+\end{itemize}
+
+Oppure se, per esempio, ho una una funzione con dominio normale rispetto a 
+\[
+y:D=\left\{{(x,y),\text{ }\gamma(y)\leq x\leq \delta(y),\text{ }c\leq y \leq d}\right\}
+\]
+e dovessi risolvere l'integrale
+
+\[
+\int\limits{\int\limits_D{\text{\f}(x,y){\rm d}x{\rm d}y}}=\int\limits_c^d{[\int\limits_{\gamma(y)}^{\delta(y)}{\text{\f}(x,y){\rm d}x}]}{\rm d}y
+\]
+
+\begin{itemize}
+    \item{Calcolo la primitiva della funzione $\int\limits_c^d{\text{\f}(x,y){\rm d}y}$ considerando y come costante}
+    \item{Calcolo \f$_y(x,y)$, cioè la primitiva rispetto a x del punto precedente}
+    \item{Calcolo l'integrale
+    \[
+     \int\limits_{\gamma(y)}^{\delta(y)}{\f(x,y){\rm d}y}=[\f(x,y)]_{\gamma(y)}^{\delta(y)}=\f[\gamma(y),y]- \f[\delta, y]
+     \]
+     }
+     
+    \item{Calcolo l'integrale doppio rispetto alla sola x ovvero risolvo
+    \[
+     \int\limits\int\limits_D{\text{\f}(x,y){\rm d}x}{{\rm d}y}=\int\limits_a^b\left\{{{\text{\f}[x,\beta(x)]-\text{\f}[\gamma(y),y]}}\right\}{\rm d}y
+     \]}
+\end{itemize}
